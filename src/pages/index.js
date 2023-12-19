@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import Banner from "../../components/banner/banner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,6 +15,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1>Netflix</h1>
+
+      {/* <NavBar /> */}
+      <Banner
+        title="The Inglorious Bastards"
+        subTitle="a very cute dog"
+        imgUrl="/static/inglorious_bastards.png"
+      />
+      {/* <Card /> */}
     </>
   );
 }
