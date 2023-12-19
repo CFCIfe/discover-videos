@@ -18,9 +18,9 @@ export default function Home() {
 
       {/* <NavBar /> */}
       <Banner
-        title="The Inglorious Bastards"
-        subTitle="a very cute dog"
-        imgUrl="/static/inglorious_bastards.png"
+        title="The Dark Knight"
+        subTitle="Don't Mess with Batman"
+        imgUrl="/static/dark_knight.jpg"
       />
       {/* <Card /> */}
     </>
