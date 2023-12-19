@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Banner from "../../components/banner/banner";
+import NavBar from "../../components/nav/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,7 @@ export default function Home() {
       </Head>
       <h1>Netflix</h1>
 
-      {/* <NavBar /> */}
+      <NavBar username="auserisunknown@gmail.com" />
       <Banner
         title="The Dark Knight"
         subTitle="Don't Mess with Batman"
