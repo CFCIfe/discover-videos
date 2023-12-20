@@ -28,7 +28,14 @@ const NavBar = (props) => {
       <div className={styles.wrapper}>
         <Link href="/" legacyBehavior>
           <a className={styles.logoLink}>
-            <div className={styles.logoWrapper}>Netflix</div>
+            <div className={styles.logoWrapper}>
+              <Image
+                src={"/static/netflix.svg"}
+                alt="Netflix Logo"
+                width={128}
+                height={35}
+              />
+            </div>
           </a>
         </Link>
         <ul className={styles.navItems}>
@@ -44,10 +51,10 @@ const NavBar = (props) => {
             <button className={styles.usernameBtn} onClick={handleShowDropdown}>
               <p className={styles.username}>{username}</p>
               <Image
-                src="../../public/static/expand_more.svg"
+                src="/static/expand_more.svg"
                 alt="drop down arrow"
-                width={50}
-                height={50}
+                width={30}
+                height={30}
               />
             </button>
 

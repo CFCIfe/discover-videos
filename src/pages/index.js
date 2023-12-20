@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Banner from "../../components/banner/banner";
 import NavBar from "../../components/nav/navbar";
+import Card from "../../components/card/card";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +16,6 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>Netflix</h1>
 
       <NavBar username="auserisunknown@gmail.com" />
       <Banner
@@ -23,7 +23,9 @@ export default function Home() {
         subTitle="Don't Mess with Batman"
         imgUrl="/static/dark_knight.jpg"
       />
-      {/* <Card /> */}
+      <Card imgUrl="/static/dark_knight.jpg" size="large" />
+      <Card imgUrl="/static/dark_knht.jpg" size="medium" />
+      <Card imgUrl="/static/dark_knight.jpg" size="small" />
     </>
   );
 }
