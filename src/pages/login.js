@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import styles from "../styles/Login.module.css";
 
 import { magic } from "../../lib/magic-client";
+import LoadingScreen from "../../components/loadingScreen/loadingScreen";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -97,7 +98,7 @@ const Login = () => {
           />
           <p className={styles.userMsg}>{userMsg} </p>
           <button onClick={handleLoginWithEmail} className={styles.loginBtn}>
-            {isLoading ? "Loading..." : "Sign in"}
+            {isLoading ? <LoadingScreen /> : "Sign in"}
           </button>
         </div>
       </main>
