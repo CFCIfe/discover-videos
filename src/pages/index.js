@@ -38,6 +38,7 @@ export default function Home({ videos, popularVideos }) {
       <div className={styles.main}>
         <NavBar username="auserisunknown@gmail.com" />
         <Banner
+          videoId="oyRxxpD3yNw"
           title="The Dark Knight"
           subTitle="Don't Mess with Batman"
           imgUrl="/static/dark_knight.jpg"
